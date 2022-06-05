@@ -1,0 +1,58 @@
+﻿@model OrionServices
+    
+    <!-- Section Services -->
+<div class="services pb-5">
+    <div class="text-center mb-4 pt-5 mt-4">
+        <h1 class="primary-txt fs-32 f_B">@Model.Title @*Orion Services*@</h1>
+        <p class="dark-txt fs-16">@Model.Desc @*You can inquire about monthly bill by card number*@</p>
+    </div>
+
+    <div class="d-flex justify-content-md-center mt-4 pt-2 filter-services">
+
+        @foreach (ServiceTypes item in Model.Servicetypes)
+        {
+            if (item.FilterName == "all")
+            {
+    <button class="btn filter-button mx-1 active" data-filter=@item.FilterName>@item.DisplayName</button> }
+                    else
+                    {
+                        <button class="btn filter-button mx-1" data-filter=@item.FilterName>@item.DisplayName</button>
+                    }
+                }
+
+        <!--<button class="btn filter-button mx-1 active" data-filter="all">All Services</button>
+    <button class="btn filter-button mx-1" data-filter="CarServices">Car Services</button>
+    <button class="btn filter-button mx-1" data-filter="Maintainance">Maintainance Services</button>
+    <button class="btn filter-button mx-1" data-filter="HomeServices">Home Sevices</button>
+    <button class="btn filter-button mx-1" data-filter="Property">Property Management</button>-->
+        <!-- <button class="btn filter-button mx-1" data-filter="Personal">Personal Services</button> -->
+        <!--<button class="btn filter-button mx-1" data-filter="Payment">Payment Services</button>
+    <button class="btn filter-button mx-1" data-filter="FoodDelivery">Food & Delivery</button>
+    <button class="btn filter-button mx-1" data-filter="OtherServices">Other Services</button>-->
+    </div>
+
+    <div class="row mx-0 ser-row">
+        @foreach (ServiceData item in Model.Servicedata)
+        {
+            <div class="gallery_product px-2 col-md-3 col-6 mb-3 filter @item.Category" >
+                <div class="card">
+                    <img class="card-img-top" src=@item.SerImg alt="">
+                    <div class="card-body p-2">
+                        <div class="s-name py-1">
+                            <span class="primary-txt fs-16 f_B line-1-3">@item.Subject</span>
+                        </div>
+                        <p class="card-text h-2 fs-14 mb-0 line-1-2 text-center">@item.Body</p>
+                    </div>
+
+                </div>
+            </div>
+        }
+
+
+    </div>
+
+
+
+</div>
+
+<!-- ==================================== -->

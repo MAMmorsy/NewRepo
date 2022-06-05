@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FAQ>
+  <TitleEn>ORION FAQs</TitleEn>
+  <TitleAr>الأسئلة الشائعة حول أورايون</TitleAr>
+  <FAQdata>
+    <ENTitle>ORION FAQs</ENTitle>
+    <ARTitle>الأسئلة الشائعة حول أورايون</ARTitle>
+  <ENQ>What are Orion’s services?</ENQ>
+  <ARQ>ما هي خدمات أورايون؟</ARQ>
+      <ENA>
+        Orion is a fully integrated services platform that offers you whatever service you need through our network of service providers and through Orion itself.
+        Orion is a cost-efficient solution as we provide the same services from the service providers but at a lower cost.
+        For more details on our offerings, please check our services page for our full range of services and their prices.
+      </ENA>
+      <ARA>
+        أورايون عبارة عن منصة خدمات متكاملة تمامًا تقدم لك أي خدمة تحتاجها من خلال شبكة مزودي الخدمة لدينا ومن خلال أورايون نفسها.
+        أورايون هو حل فعال من حيث التكلفة حيث نقدم نفس الخدمات من مزودي الخدمة ولكن بتكلفة أقل.
+        لمزيد من التفاصيل حول عروضنا، يرجى مراجعة صفحة خدماتنا لمعرفة المجموعة الكاملة من الخدمات وأسعارها.
+      </ARA>
+  </FAQdata>
+
+  <FAQdata>
+    <ENTitle>ORION FAQs</ENTitle>
+    <ARTitle>الأسئلة الشائعة حول أورايون</ARTitle>
+    <ENQ>How to book a service? </ENQ>
+    <ARQ>كيف تحجز الخدمة؟</ARQ>
+      <ENA>
+        For a seamless booking, pick the service you need from our services page and call us on 16286 to make the reservation.
+        For more details on our offerings, please check our services page for our full range of services and their prices.
+      </ENA>
+      <ARA>
+        لحجز سلس، اختر الخدمة التي تحتاجها من صفحة خدماتنا واتصل بنا على 16286 لإجراء الحجز.
+        لمزيد من التفاصيل حول عروضنا، يرجى مراجعة صفحة خدماتنا لمعرفة المجموعة الكاملة من الخدمات وأسعارها.
+      </ARA>
+  </FAQdata>
+
+  <FAQdata>
+    <ENTitle>ORION FAQs</ENTitle>
+    <ARTitle>الأسئلة الشائعة حول أورايون</ARTitle>
+    <ENQ>How much do our services cost?</ENQ>
+    <ARQ>كم تكلفة خدماتنا؟</ARQ>
+    <ENA>
+        You can check our services page for our full range of services and their prices
+        You can also call us on 16286 or chat with us through WhatsApp on the number 01101016286.
+      </ENA>
+    <ARA>
+        يمكنك التحقق من صفحة خدماتنا لمعرفة المجموعة الكاملة من الخدمات ثم الاتصال بنا على 16286 لمزيد من التفاصيل أوتواصل معنا عبر خدمة الواتس آب على الرقم 01101016286
+      </ARA>
+  </FAQdata>
+
+  <FAQdata>
+    <ENTitle>ORION FAQs</ENTitle>
+    <ARTitle>الأسئلة الشائعة حول أورايون</ARTitle>
+    <ENQ>What areas does Orion cover?</ENQ>
+    <ARQ>ما هي المناطق التي تغطيها أورايون؟</ARQ>
+    <ENA>
+        Orion offers its services in Madinaty, Rehab, 5th, 3rd, and 1st Settlement, and El Shrouk city.
+      </ENA>
+    <ENA>
+        تقدم أورايون خدماتها في مدينتي ، الرحاب ، التجمع الخامس ، الثالث ، الأول ومدينة الشروق.
+      </ENA>
+    </FAQdata>
+
+  <FAQdata>
+    <ENTitle>ORION FAQs</ENTitle>
+    <ARTitle>الأسئلة الشائعة حول أورايون</ARTitle>
+    <ENQ>Who are the service providers/partners network?</ENQ>
+    <ARQ>من هم مزودو الخدمة / شبكة الشركاء؟</ARQ>
+    <ENA>
+        We have a wide network of service providers tailored to meet all your needs. You can check our Partners page to check the full list.
+        For more details and bookings, please call us on 16286 or chat with us through WhatsApp on the number 01101016286
+      </ENA>
+    <ENA>
+        لدينا شبكة واسعة من مزودي الخدمة المصممين لتلبية جميع احتياجاتك. يمكنك مراجعة صفحة شركائنا للتحقق من القائمة الكاملة
+        لمزيد من التفاصيل والحجوزات ، يرجى الاتصال بنا على 16286 أو التواصل معنا على الواتس آب على الرقم 01101016286
+      </ENA>
+  </FAQdata>
+</FAQ>

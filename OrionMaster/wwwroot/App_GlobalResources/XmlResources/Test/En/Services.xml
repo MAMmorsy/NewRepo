@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Services>
+  <Title>Orion Services</Title>
+  <Desc>Everything You Need in One Place</Desc>
+  
+  <ServiceTypes>
+    <sId>s1</sId>
+    <dId>d1</dId>
+    <DisplayName>All Services</DisplayName>
+    <FilterName>all</FilterName>
+    <Img>/OrionMaster/assets/images/icons/why/knowledge-1.png</Img>
+  </ServiceTypes>
+
+  <ServiceTypes>
+    <sId>s2</sId>
+    <dId>d2</dId>
+    <DisplayName>Car Services</DisplayName>
+    <FilterName>CarServices</FilterName>
+    <Img>/OrionMaster/assets/images/icons/why/surface-1.png</Img>
+  </ServiceTypes>
+
+  <ServiceTypes>
+    <sId>s3</sId>
+    <dId>d3</dId>
+    <DisplayName>Maintainance Services</DisplayName>
+    <FilterName>Maintainance</FilterName>
+    <Img>/OrionMaster/assets/images/icons/why/reliability.png</Img>
+  </ServiceTypes>
+
+  <ServiceTypes>
+    <sId>s4</sId>
+    <dId>d4</dId>
+    <DisplayName>Home Sevices </DisplayName>
+    <FilterName>HomeServices</FilterName>
+    <Img>/OrionMaster/assets/images/icons/why/customer-service.png</Img>
+    </ServiceTypes>
+
+  <ServiceTypes>
+    <sId>s5</sId>
+    <dId>d5</dId>
+    <DisplayName>Property Management</DisplayName>
+    <FilterName>Property</FilterName>
+    <Img>/OrionMaster/assets/images/icons/why/team.png</Img>
+  </ServiceTypes>
+  
+  <ServiceTypes>
+    <sId>s6</sId>
+    <dId>d6</dId>
+    <DisplayName>Payment Services</DisplayName>
+    <FilterName>Payment</FilterName>
+    <Img>/OrionMaster/assets/images/icons/why/team.png</Img>
+  </ServiceTypes>
+
+  <ServiceTypes>
+    <sId>s7</sId>
+    <dId>d7</dId>
+    <DisplayName>Food &amp; Delivery</DisplayName>
+    <FilterName>FoodDelivery</FilterName>
+    <Img>/OrionMaster/assets/images/icons/why/team.png</Img>
+  </ServiceTypes>
+  
+  <ServiceTypes>
+    <sId>s8</sId>
+    <dId>d8</dId>
+    <DisplayName>Other Services</DisplayName>
+    <FilterName>OtherServices</FilterName>
+    <Img>/OrionMaster/assets/images/icons/why/team.png</Img>
+  </ServiceTypes>
+
+  <ServiceData>
+    <seId>se1</seId>
+    <deId>de1</deId>
+    <Category>Property</Category>
+    <Subject>Property Management</Subject>
+    <Body>Managing your properties from selling, renting to helping you buy.</Body>
+    <SerImg>/OrionMaster/assets/images/services/property.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se2</seId>
+    <deId>de2</deId>
+    <Category>HomeServices</Category>
+    <Subject>Home Design &amp; Finishing</Subject>
+    <Body>Designing your new homes with full finishing services.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Finishing0.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se3</seId>
+    <deId>de3</deId>
+    <Category>HomeServices</Category>
+    <Subject>Furniture Moving</Subject>
+    <Body>Moving your furniture to your new home or wherever you desire.</Body>
+    <SerImg>/OrionMaster/assets/images/services/move-furniture.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se4</seId>
+    <deId>de4</deId>
+    <Category>HomeServices</Category>
+    <Subject>Housekeeping &amp; Disinfection</Subject>
+    <Body>Fully cleaning your homes professionally and disinfecting them.</Body>
+    <SerImg>/OrionMaster/assets/images/services/cleaning_spray_closeup.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se5</seId>
+    <deId>de5</deId>
+    <Category>HomeServices</Category>
+    <Subject>Pest Control</Subject>
+    <Body>Fighting all kinds of pests.</Body>
+    <SerImg>/OrionMaster/assets/images/services/pestpredictions.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se6</seId>
+    <deId>de6</deId>
+    <Category>OtherServices</Category>
+    <Subject>Landscaping</Subject>
+    <Body>Providing all the landscaping services you desire</Body>
+    <SerImg>/OrionMaster/assets/images/services/landscape-curb.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se7</seId>
+    <deId>de7</deId>
+    <Category>HomeServices</Category>
+    <Subject>Carpentry, Plumbing and Electricity</Subject>
+    <Body>Handling all you home requirements from carpentry, plumbing to electricity.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Carpentry-Plumbing-Electricity.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se8</seId>
+    <deId>de8</deId>
+    <Category>OtherServices</Category>
+    <Subject>Paint Jobs</Subject>
+    <Body>Fully painting the places you desire.</Body>
+    <SerImg>/OrionMaster/assets/images/services/paint.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se9</seId>
+    <deId>de9</deId>
+    <Category>Maintainance</Category>
+    <Subject>Satellite maintenance</Subject>
+    <Body>Providing satellite maintenance to your homes, offices or any place you desire.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Satellite-maintenance.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se10</seId>
+    <deId>de10</deId>
+    <Category>Maintainance</Category>
+    <Subject>Air conditioner maintenance</Subject>
+    <Body>Providing Air conditioner maintenance to your homes, offices or any place you desire.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Air-Conditioner-Repair.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se11</seId>
+    <deId>de11</deId>
+    <Category>Maintainance</Category>
+    <Subject>Appliances Maintenance</Subject>
+    <Body>Providing Air conditioner maintenance to your homes, offices or any place you desire.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Appliances-Maintenance.png</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se12</seId>
+    <deId>de12</deId>
+    <Category>HomeServices</Category>
+    <Subject>Laundry &amp; Dry Clean</Subject>
+    <Body>Taking care of all your laundry and dry clean needs.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Laundry-DryClean.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se13</seId>
+    <deId>de13</deId>
+    <Category>FoodDelivery</Category>
+    <Subject>Grocery</Subject>
+    <Body>Providing you with your daily groceries needs right to your doorstep.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Grocery.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se14</seId>
+    <deId>de14</deId>
+    <Category>FoodDelivery</Category>
+    <Subject>Delivery</Subject>
+    <Body>Delivering all your needs wherever you want.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Delivery.png</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se15</seId>
+    <deId>de15</deId>
+    <Category>HomeServices</Category>
+    <Subject>Electricity Charge</Subject>
+    <Body>Taking care of your usual electricity charge payments.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Electricity-Charge.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se16</seId>
+    <deId>de16</deId>
+    <Category>CarServices</Category>
+    <Subject>Car Rescue</Subject>
+    <Body>Providing car rescue wherever you are.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Car-Rescue.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se17</seId>
+    <deId>de17</deId>
+    <Category>CarServices</Category>
+    <Subject>Car Wash</Subject>
+    <Body>Taking care of your Car cleanliness</Body>
+    <SerImg>/OrionMaster/assets/images/services/Car-Wash.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se18</seId>
+    <deId>de18</deId>
+    <Category>CarServices</Category>
+    <Subject>Car Maintenance</Subject>
+    <Body>Taking care of your Car maintenance.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Car-Maintenance.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se19</seId>
+    <deId>de19</deId>
+    <Category>OtherServices</Category>
+    <Subject>Ride Hailing &amp; Sharing</Subject>
+    <Body>Providing you with ride hailing and sharing solutions from door to door.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Ride-Hailing.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se20</seId>
+    <deId>de20</deId>
+    <Category>OtherServices</Category>
+    <Subject>Beauty &amp; Personal Care</Subject>
+    <Body>Taking care of your personal beauty and grooming.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Beauty-Personal.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se21</seId>
+    <deId>de21</deId>
+    <Category>OtherServices</Category>
+    <Subject>Pets Care</Subject>
+    <Body>Taking care of your pets.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Pets-Care.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se22</seId>
+    <deId>de22</deId>
+    <Category>HomeServices</Category>
+    <Subject>Home Medical Services</Subject>
+    <Body>Providing you with all the medical services needs right to your doorstep.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Home-Medical-Services.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se23</seId>
+    <deId>de23</deId>
+    <Category>OtherServices</Category>
+    <Subject>Traveling services</Subject>
+    <Body>Providing all your travel needs.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Traveling-services.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se24</seId>
+    <deId>de24</deId>
+    <Category>Payment</Category>
+    <Subject>Payment Services</Subject>
+    <Body>Taking care of all your payments at ease.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Payment-Services.png</SerImg>
+  </ServiceData>
+
+</Services>

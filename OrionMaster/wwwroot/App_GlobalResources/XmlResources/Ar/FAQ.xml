@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FAQ>
+  <Title>الأسئلة الشائعة حول أورايون</Title>
+  <FAQdata>
+    <sId>s1</sId>
+    <dId>d1</dId>
+    <Q>ما هي خدمات أورايون؟</Q>
+    <A>
+      أورايون عبارة عن منصة خدمات متكاملة تمامًا تقدم لك أي خدمة تحتاجها من خلال شبكة مزودي الخدمة لدينا ومن خلال أورايون نفسها.&lt;br /&gt;
+      أورايون هو حل فعال من حيث التكلفة حيث نقدم نفس الخدمات من مزودي الخدمة ولكن بتكلفة أقل.&lt;br /&gt;
+      &lt;span class="f_B"&gt;لمزيد من التفاصيل&lt;/span&gt; حول عروضنا، يرجى مراجعة &lt;a class="f_B link" href="/Home/Services"&gt;صفحة خدماتنا&lt;/a&gt; لمعرفة المجموعة الكاملة من الخدمات وأسعارها.
+    </A>
+  </FAQdata>
+
+  <FAQdata>
+    <sId>s2</sId>
+    <dId>d2</dId>
+    <Q>كيف تحجز الخدمة؟</Q>
+      <A>
+        لحجز سلس، اختر الخدمة التي تحتاجها من &lt;a class="f_B link" href="/Home/Services"&gt;صفحة خدماتنا&lt;/a&gt; واتصل بنا على &lt;a href="tel:16286" class="f_B"&gt;16286 &lt;/a&gt; لإجراء الحجز.&lt;br /&gt;
+        &lt;span class="f_B"&gt;لمزيد من التفاصيل&lt;/span&gt; حول عروضنا، يرجى مراجعة &lt;a class="f_B link" href="/Home/Services"&gt;صفحة خدماتنا&lt;/a&gt; لمعرفة المجموعة الكاملة من الخدمات وأسعارها.
+      </A>
+  </FAQdata>
+
+  <FAQdata>
+    <sId>s3</sId>
+    <dId>d3</dId>
+    <Q>كم تكلفة خدماتنا؟</Q>
+    <A>
+        يمكنك التحقق من &lt;a class="f_B link" href="/Home/Services"&gt;صفحة خدماتنا&lt;/a&gt; لمعرفة المجموعة الكاملة من الخدمات&lt;br /&gt; ثم الاتصال بنا على &lt;a href="tel:16286" class="f_B"&gt;16286 &lt;/a&gt; &lt;span class="f_B"&gt;لمزيد من التفاصيل&lt;/span&gt; أوتواصل معنا عبر خدمة الواتس آب على الرقم &lt;a class="f_B" target="blank" href="https://api.whatsapp.com/send?phone=201101016286"&gt;+201101016286&lt;/a&gt;
+      </A>
+  </FAQdata>
+
+  <FAQdata>
+    <sId>s4</sId>
+    <dId>d4</dId>
+    <Q>ما هي المناطق التي تغطيها أورايون؟</Q>
+    <A>
+        تقدم أورايون خدماتها في مدينتي ، الرحاب ، التجمع الخامس ، الثالث ، الأول ومدينة الشروق.
+      </A>
+    </FAQdata>
+
+  <FAQdata>
+    <sId>s5</sId>
+    <dId>d5</dId>
+    <Q>من هم مزودو الخدمة / شبكة الشركاء؟</Q>
+    <A>
+        لدينا شبكة واسعة من مزودي الخدمة المصممين لتلبية جميع احتياجاتك.
+        يمكنك مراجعة &lt;a class="f_B link" href="/Home/Partners"&gt;صفحة شركائنا&lt;/a&gt; للتحقق من القائمة الكاملة.&lt;br /&gt;
+        &lt;span class="f_B"&gt;لمزيد من التفاصيل&lt;/span&gt; والحجوزات ، يرجى الاتصال بنا على &lt;a href="tel:16286" class="f_B"&gt;16286 &lt;/a&gt; أو التواصل معنا على الواتس آب على الرقم &lt;a class="f_B" target="blank" href="https://api.whatsapp.com/send?phone=201101016286"&gt;+201101016286&lt;/a&gt;
+      </A>
+  </FAQdata>
+</FAQ>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AboutUs>
+  <HeadInfo>
+
+    Orion is the exclusive one stop shop for all the services needed. &lt;br /&gt;
+    We at Orion are customer-focused, and we adopt a continuous improvement philosophy in everything  &lt;br /&gt;
+    we do to ensure the highest satisfaction levels for our customers and stakeholders.
+  </HeadInfo>
+    
+<AboutUsData>
+  <Title>About</Title>
+  <active>active</active>
+  <Subject>Let Us Be Your Partners Preferred Online Partner</Subject>
+  <Desc>We are introducing integrated services through a One-Stop-Portal, enriching our clients’ lifestyle and optimizing their daily spend. We offer a wide variety of service provider options that guarantee a tailored service at your preferred convenience, the time of your choosing and the price that suits you.</Desc>
+  <AboutData>
+    <sId>s1</sId>
+    <dId>d1</dId>
+    <active>active</active>
+    <Subject>Convenience </Subject>
+    <Body>Our wide selection of service providers enables you to order and schedule the service at the time of your choosing</Body>
+  </AboutData>
+
+  <AboutData>
+    <sId>s2</sId>
+    <dId>d2</dId>
+    <active>active</active>
+    <Subject>Price Guarantee</Subject>
+    <Body>Ordering through Orion guarantees you a lower listed price by a service provider than if ordered directly through the service provider</Body>
+  </AboutData>
+
+  <AboutData>
+    <sId>s3</sId>
+    <dId>d3</dId>
+    <active>active</active>
+    <Subject>Quality</Subject>
+    <Body>We guarantee quality satisfaction through our wide network. We re-perform the service for you if it is not up to your satisfaction through the service provider of your choice at no extra cost or your money back</Body>
+  </AboutData>
+</AboutUsData>
+
+  <AboutUsData>
+      <Title>Mission</Title>
+    <active></active>
+      <Subject></Subject>
+      <Desc></Desc>
+      <AboutData>
+        <sId>ms1</sId>
+        <dId>sd1</dId>
+        <active></active>
+        <Subject></Subject>
+        <Body>We deliver excellence in providing a smart market place for services with the utmost focus on sustainable cost-efficient work-flows while being led by innovative technology, satisfying the needs and exceeding the expectations of our customers, business partners and all other stakeholders.</Body>
+      </AboutData>
+    </AboutUsData>
+  <AboutUsData>
+      <Title>Vision</Title>
+    <active></active>
+      <Subject></Subject>
+      <Desc></Desc>
+      <AboutData>
+        <sId>vs1</sId>
+        <dId>vd1</dId>
+        <active></active>
+        <Subject></Subject>
+        <Body>
+          Become the optimum go-to smart market place App for services.
+          Helping people live a better and easier life.
+        </Body>
+      </AboutData>
+    </AboutUsData>
+  
+</AboutUs>

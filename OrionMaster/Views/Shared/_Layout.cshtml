@@ -1,0 +1,444 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OrionMaste</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="~/assets/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="~/assets/owl-carousel/owl.theme.default.min.css" />
+    @*<link rel="stylesheet" href="~/assets/slick/slick.css">
+        <link rel="stylesheet" href="~/assets/slick/slick-theme.css">*@
+    @if (Context.Session.GetString("lang") == "Ar")
+    {
+    <link rel="stylesheet" href="~/assets/css/style_rtl.css" />
+    }
+    else
+    {
+    <link rel="stylesheet" href="~/assets/css/style.css" />
+    }
+
+    <style type="text/css">
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: black;
+            z-index: 99;
+            opacity: 0.8;
+            filter: alpha(opacity=80);
+            -moz-opacity: 0.8;
+            min-height: 100%;
+            width: 100%;
+            display:block;
+        }
+
+        .loading {
+            font-family: Arial;
+            font-size: 10pt;
+            /*border: 5px solid #67CFF5;*/
+            width: 50px;
+            height: 50px;
+            display: none;
+            position: fixed;
+            background-color: transparent;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Start Header  -->
+
+    <header class="fixed-top box-shadow header" id="navbar">
+
+        <!-- TOP Bar -->
+        <div class="top-bar primary-bg py-2">
+            <div class="mx-5 px-3 d-md-flex justify-content-between align-items-center">
+
+                <div class="text-white fs-12 in-card">
+                    <a href="tel:16286" class="text-white">
+                        <i class="la la-phone"></i>
+                        16286
+                    </a>
+                    <span class="mx-2">|</span>
+                    <a href="mailto:info@orion-eg.com" class="text-white">
+                        <i class="la la-envelope"></i>
+                        info@orion-eg.com
+                    </a>
+                </div>
+                <div class="text-white fs-12 in-card">
+                    @if (Context.Session.GetString("lang") == "Ar")
+                    {
+                    <a href="@Url.Action("Index","Home")#Contacting" class="text-white">
+                        <i class="la la-map-marked-alt"></i>
+                        اتصل بنا
+                    </a>
+                    }
+                    else
+                    {
+                    <a href="@Url.Action("Index","Home")#Contacting" class="text-white">
+                        <i class="la la-map-marked-alt"></i>
+                        Contact Us
+                    </a>
+                    }
+                    <span class="mx-2">|</span>
+                    <a href="@Url.Action("Index","Home")#FAQs" class="text-white FAQs">
+                        <i class="la la-question-circle-o"></i>
+                        FAQs
+                    </a>
+
+                    @if (Context.Session.GetString("lang") == "Ar")
+                    {
+                    <div class="dropdown d-inline-block mx-3 lang-drop">
+                        <button class="btn dropdown-toggle bg-transaprent fs-12 text-white btn-sm br-0 py-0" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <!-- <img src="assets/images/icons/en.svg" alt=""> -->
+                            عربى
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                            <button class="dropdown-item" id="btnLang" onclick="location.href='@Url.Action("SetSession", "Home",new {lang="En",returnUrl=@ViewContext.HttpContext.Request.PathAndQuery()})'">
+                                <!-- <img src="assets/images/icons/ar.svg" alt=""> -->
+                                EN
+                            </button>
+                        </div>
+                    </div>
+
+                    }
+                    else
+                    {
+                    <div class="dropdown d-inline-block mx-3 lang-drop">
+                        <button class="btn dropdown-toggle bg-transaprent fs-12 text-white btn-sm br-0 py-0" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <!-- <img src="assets/images/icons/en.svg" alt=""> -->
+                            EN
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                            @*<button class="dropdown-item" id="btnLang" onclick="location.href='@Url.Action("SetSession", "Home",new {lang="Ar"})'">*@
+                            <button class="dropdown-item" id="btnLang" onclick="location.href='@Url.Action("SetSession", "Home",new {lang="Ar",returnUrl=@ViewContext.HttpContext.Request.PathAndQuery()})'">
+                                <!-- <img src="assets/images/icons/ar.svg" alt=""> -->
+                                Arabic
+                            </button>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light py-2 px-lg-4 mx-lg-5">
+            <a class=" navbar-brand" asp-action="Index" asp-controller="Home">
+                @*href="index.html"*@
+                <img src="~/assets/images/Logo.jpeg" alt="logo Header" class="logo-header" width="150">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-5 align-items-center">
+                    <li class="nav-item">
+                        @*<a class="nav-link active" href="index.html">
+                                Home
+                                <span class="sr-only">(current)</span>
+                            </a>*@
+                        @if (Context.Session.GetString("lang") == "Ar")
+                            {
+                        <a class="@(ViewContext.RouteData.Values["action"].ToString() == "Index" ? "nav-link active" : "nav-link")" asp-action="Index" asp-controller="Home">
+
+                            الرئيسية
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        }
+                        else
+                            {
+                        <a class="@(ViewContext.RouteData.Values["action"].ToString() == "Index" ? "nav-link active" : "nav-link")" asp-action="Index" asp-controller="Home">
+
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        }
+                    </li>
+
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" href="tmg_payement.html">TMG Paymentss</a>
+                    </li> -->
+
+                    <li class="nav-item">
+                        @*<a class="nav-link" href="about.html">About Orion</a>*@
+                        @if (Context.Session.GetString("lang") == "Ar")
+                            {<a class="@(ViewContext.RouteData.Values["action"].ToString() == "About" ? "nav-link active" : "nav-link")" asp-action="About" asp-controller="Home">حول أورايون</a>
+                        }
+                        else{
+                        <a class="@(ViewContext.RouteData.Values["action"].ToString() == "About" ? "nav-link active" : "nav-link")" asp-action="About" asp-controller="Home">About Orion</a>}
+                    </li>
+
+                    <li class="nav-item">
+                        @*<a class="nav-link" href="services.html">Services</a>*@
+                        @if (Context.Session.GetString("lang") == "Ar"){
+                        <a class="@(ViewContext.RouteData.Values["action"].ToString() == "Services" ? "nav-link active" : "nav-link")" asp-action="Services" asp-controller="Home">الخدمات</a>
+                        }
+                        else{
+                        <a class="@(ViewContext.RouteData.Values["action"].ToString() == "Services" ? "nav-link active" : "nav-link")" asp-action="Services" asp-controller="Home">Services</a>}
+                    </li>
+                    <li class="nav-item">
+                        @*<a class="nav-link" href="partners.html">Partners</a>*@
+                        @if (Context.Session.GetString("lang") == "Ar"){
+                        <a class="@(ViewContext.RouteData.Values["action"].ToString() == "Partners" ? "nav-link active" : "nav-link")" asp-action="Partners" asp-controller="Home">شركائنا </a>
+                        }
+                        else{
+                        <a class="@(ViewContext.RouteData.Values["action"].ToString() == "Partners" ? "nav-link active" : "nav-link")" asp-action="Partners" asp-controller="Home">Partners</a>}
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--End Header-->
+
+    <div @*class="container"*@>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Start Footer  -->
+    <footer class="pt-5">
+        <div class="footer py-5">
+            <div class="row mx-0">
+
+                <div class="col-md-4">
+
+                    <div class="intro">
+                        <img src="~/assets/images/Logo.jpeg" alt="" width="170">
+                        @if (Context.Session.GetString("lang") == "Ar")
+                        {
+
+                        <p class="fs-14 mt-3">
+                            اورايون هو المنصة الحصرية لجميع الخدمات المطلوبة.
+                            <br>
+                            <br>
+                            في اورايون بنوجه تركيزنا على العملاء، وبنعتمد على التحسين المستمر في كل اللي
+                            بنقوم بيه لضمان أعلى مستويات الرضا لعملائنا.
+
+
+                        </p>
+                        }
+                        else
+                        {
+                        <p class="fs-14 mt-3">
+                            Orion is the exclusive one stop shop for all the services needed in Madinaty.
+                            <br>
+                            <br>
+                            We at Orion are customer - focused, and we adopt a continuous improvement philosophy in everything we do to ensure the highest satisfaction levels for our customers and stakeholders.
+
+                        </p>
+                        }
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 quick-links pt-4">
+                    <div class="px-5">
+
+                        @if (Context.Session.GetString("lang") == "Ar"){<h5>روابط سريعة</h5>
+
+                        <ul class="px-4 pt-3">
+                            <li class="mb-2"><a asp-action="Services" asp-controller="Home">الخدمات</a>@*<a href="services.html">Our Services</a>*@</li>
+                            <li class="mb-2"><a asp-action="About" asp-controller="Home">حول أورايون</a>@*<a href="about.html">About Orion</a>*@</li>
+                            <!-- <li class="mb-2"><a href="#">Orion App</a></li> -->
+                            <li class="mb-2"><a asp-action="Partners" asp-controller="Home">شركائنا</a>@*<a href="partners.html">Our Partners</a>*@</li>
+                        </ul>
+                        }
+                        else
+                        {
+                        <h5>Quick Links</h5>
+                        <ul class="px-4 pt-3">
+                            <li class="mb-2"><a asp-action="Services" asp-controller="Home">Our Services</a>@*<a href="services.html">Our Services</a>*@</li>
+                            <li class="mb-2"><a asp-action="About" asp-controller="Home">About Orion</a>@*<a href="about.html">About Orion</a>*@</li>
+                            <!-- <li class="mb-2"><a href="#">Orion App</a></li> -->
+                            <li class="mb-2"><a asp-action="Partners" asp-controller="Home">Our Partners</a>@*<a href="partners.html">Our Partners</a>*@</li>
+                            <!-- <li class="mb-2"><a href="#">Terms & Conditions</a></li> -->
+                        </ul>
+                            }
+
+                    </div>
+                </div>
+
+                <div id="newsLetter" class="col-md-4 subscribe pt-4">
+                    @*<section id="news">
+                            @Html.Partial("NewsLetterPartial", new NewsLetterSub())
+                        </section>*@
+
+                    @*<form asp-action="Create" asp-controller="NewsLetterSubs" method="post">*@
+                    @*<form class="form" id="news-form">*@
+                    @if (Context.Session.GetString("lang") == "Ar"){
+                    <h5>اشترك لتلقي الرسائل الإخبارية والإشعارات</h5>
+                    }
+                    else
+                    {
+                    <h5>Subscribe to receive newsletters and notifications</h5>}
+                <div class="form-group">
+                    <input type="hidden" name="returnUrl"
+                           value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+                    @if (Context.Session.GetString("lang") == "Ar"){
+                    <input type="email" name="Email" id="txtEmail" class="form-control" placeholder="اكتب بريدك الإلكترونى" aria-describedby="helpId" required="required" />
+                            }
+                            else
+                            {
+                    <input type="email" name="Email" id="txtEmail" class="form-control" placeholder="Type Your Email" aria-describedby="helpId" required="required" />}
+                    @*<input asp-for="Email" class="form-control" placeholder="Type Your Email" aria-describedby="helpId" />*@
+                    <span id="lblError" class="text-danger"></span>
+
+                    <button type="submit" id="btnNews" class="btn send-btn">
+                        <i class="la la-send"></i>
+                    </button>
+                    @*<div id='loader2' style='display: none; background-color: rgba(255, 0, 0, 0.5)'>*@
+                    <!--<img src="~/assets/images/load.gif" width='32px' height='32px' id='loader2' style='display: none;'>-->
+                    @*</div>*@
+
+                    <div class="loading" align="center">
+
+                        <img src="~/assets/images/load.gif" width='50px' height='50px' alt="" />
+                    </div>
+                </div>
+                    @*</form>*@
+                    <div class="social-icons d-flex justify-content-start align-items-center pt-4">
+                        <a target="_blank" href="https://www.facebook.com/OrionFSM " class="mx-2">
+                            <i class="la la-facebook"></i>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/orion_services/ " class="mx-2">
+                            <i class="la la-instagram"></i>
+                        </a>
+                        <!-- <a href="#" class="mx-2">
+                          <i class="la la-twitter"></i>
+                        </a> -->
+                        <!-- <a href="#" class="mx-2">
+                          <i class="la la-youtube"></i>
+                        </a> -->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="primary-light-bg text-center p-3">
+            <span class="fs-14 f_B">
+                &copy; All Rights Reserved 2022 - Orion Comapny
+            </span>
+        </div>
+    </footer>
+    <!-- End Footer  -->
+    <!-- Back to top -->
+    <a href="#" class="back-to-top" style="display: none;">
+        <i class="la la-angle-double-up"></i>
+    </a>
+
+    <script type="text/javascript">
+
+        function ValidateEmail() {
+            var email = document.getElementById("txtEmail").value;
+            var lblError = document.getElementById("lblError");
+            lblError.innerHTML = "";
+            var expr = /^([\w-\.]+)@@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+            if (!expr.test(email)) {
+                lblError.innerHTML = "Invalid email address.";
+            }
+        }
+    </script>
+
+    <script src="~/assets/js/jquery-3.3.1.js"></script>
+    <script src="~/assets/js/popper.min.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script src="~/assets/owl-carousel/owl.carousel.min.js"></script>
+    @*<script src="~/assets/slick/slick.min.js"></script>*@
+    @if (Context.Session.GetString("lang") == "Ar")
+    {
+    <script src="~/assets/js/custom_rtl.js"></script>
+    }
+    else
+    {
+    <script src="~/assets/js/custom.js"></script>
+    }
+    @*<script type="text/javascript">
+            $(document).ajaxStart(function () {
+                // Show image container
+                $("#loader2").show();
+            });
+            $(document).ajaxComplete(function () {
+                // Hide image container
+                $("#loader2").hide();
+            });
+        </script>*@
+    <script type="text/javascript">
+        $(document).ajaxStart(function () {
+            //// Show image container
+            //$("#loader").show();
+            var modal = $('<div />');
+            modal.addClass("modal");
+            $('body').append(modal);
+            var loading = $(".loading");
+
+            loading.show();
+            var top = Math.max($(window).height() / 2 - loading[0].offsetHeight / 2, 0);
+            var left = Math.max($(window).width() / 2 - loading[0].offsetWidth / 2, 0);
+            loading.css({ top: top, left: left, })
+        });
+        $(document).ajaxComplete(function () {
+            //// Hide image container
+            //$("#loader").hide();
+            $(".modal").hide();
+            $(".loading").hide();
+        });
+        </script>
+        <script type="text/javascript">
+            $(function () {
+                $("#btnNews").click(function () {
+                    var email = document.getElementById("txtEmail").value;
+                    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                    if (email != "") {
+                        if (email.match(validRegex)) {
+                            $.ajax({
+                                type: "POST",
+                                ///*Test Version*/
+                                //url: "/OrionMaster/NewsLetterSubs/Sub",
+                                /*Live Version*/
+                                url: "/NewsLetterSubs/Sub",
+                                data: { "email": $("#txtEmail").val() },
+                                success: function (response) {
+                                    if (response != null) {
+                                        $("#lblError").html(response);
+                                        $("#txtEmail").val("");
+                                        setTimeout(function () {
+                                            $("#lblError").html("");
+                                        }, 3000);
+                                    } else {
+                                        /*alert("Session object not found.");*/
+                                    }
+                                }
+                                //,
+                                //failure: function (response) {
+                                //    alert(response.responseText);
+                                //},
+                                //error: function (response) {
+                                //    alert(response.responseText);
+                                //}
+                            });
+                        }
+                        else {
+                            $("#lblError").html("enter a valid email");
+                        }
+                    }
+                    else {
+                        $("#lblError").html("enter your email");
+                    }
+
+                });
+            });
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

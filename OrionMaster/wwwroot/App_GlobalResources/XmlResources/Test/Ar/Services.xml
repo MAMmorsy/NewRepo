@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Services>
+  <Title>خدماتنا</Title>
+  <Desc>كل ما تحتاجه فى مكان واحد</Desc>
+  
+  <ServiceTypes>
+    <sId>s1</sId>
+    <dId>d1</dId>
+    <DisplayName>كل الخدمات </DisplayName>
+    <FilterName>all</FilterName>
+    <Img>/OrionMaster/assets/images/icons/why/knowledge-1.png</Img>
+  </ServiceTypes>
+
+  <ServiceTypes>
+    <sId>s2</sId>
+    <dId>d2</dId>
+    <DisplayName>العناية بالسيارة</DisplayName>
+    <FilterName>CarServices</FilterName>
+    <Img>/OrionMaster/assets/images/icons/why/surface-1.png</Img>
+  </ServiceTypes>
+
+  <ServiceTypes>
+    <sId>s3</sId>
+    <dId>d3</dId>
+    <DisplayName>الصيانة</DisplayName>
+    <FilterName>Maintainance</FilterName>
+    <Img>/OrionMaster/assets/images/icons/why/reliability.png</Img>
+  </ServiceTypes>
+
+  <ServiceTypes>
+    <sId>s4</sId>
+    <dId>d4</dId>
+    <DisplayName>العناية بالمنزل </DisplayName>
+    <FilterName>HomeServices</FilterName>
+    <Img>/OrionMaster/assets/images/icons/why/customer-service.png</Img>
+    </ServiceTypes>
+
+  <ServiceTypes>
+    <sId>s5</sId>
+    <dId>d5</dId>
+    <DisplayName>إدارة الممتلكات</DisplayName>
+    <FilterName>Property</FilterName>
+    <Img>/OrionMaster/assets/images/icons/why/team.png</Img>
+  </ServiceTypes>
+  
+  <ServiceTypes>
+    <sId>s6</sId>
+    <dId>d6</dId>
+    <DisplayName>خدمات الدفع</DisplayName>
+    <FilterName>Payment</FilterName>
+    <Img>/OrionMaster/assets/images/icons/why/team.png</Img>
+  </ServiceTypes>
+
+  <ServiceTypes>
+    <sId>s7</sId>
+    <dId>d7</dId>
+    <DisplayName>التوصيل</DisplayName>
+    <FilterName>FoodDelivery</FilterName>
+    <Img>/OrionMaster/assets/images/icons/why/team.png</Img>
+  </ServiceTypes>
+  
+  <ServiceTypes>
+    <sId>s8</sId>
+    <dId>d8</dId>
+    <DisplayName>خدمات أخرى</DisplayName>
+    <FilterName>OtherServices</FilterName>
+    <Img>/OrionMaster/assets/images/icons/why/team.png</Img>
+  </ServiceTypes>
+
+  <ServiceData>
+    <seId>se1</seId>
+    <deId>de1</deId>
+    <Category>Property</Category>
+    <Subject>إدارة الممتلكات</Subject>
+    <Body>إدارة الممتلكات الخاصة بك من البيع والتأجير إلى مساعدتك على الشراء.</Body>
+    <SerImg>/OrionMaster/assets/images/services/property.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se2</seId>
+    <deId>de2</deId>
+    <Category>HomeServices</Category>
+    <Subject>تصميم المنزل والتشطيب</Subject>
+    <Body>تصميم بيوتكم الجديدة بخدمات تشطيب كاملة.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Finishing0.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se3</seId>
+    <deId>de3</deId>
+    <Category>HomeServices</Category>
+    <Subject>نقل الاثاث</Subject>
+    <Body>انقل أثاثك إلى منزلك الجديد أو أينما تريد.</Body>
+    <SerImg>/OrionMaster/assets/images/services/move-furniture.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se4</seId>
+    <deId>de4</deId>
+    <Category>HomeServices</Category>
+    <Subject>النظافة المنزلية والتطهير</Subject>
+    <Body>تنظيف منزلك بالكامل بشكل احترافي وتطهيرها.</Body>
+    <SerImg>/OrionMaster/assets/images/services/cleaning_spray_closeup.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se5</seId>
+    <deId>de5</deId>
+    <Category>HomeServices</Category>
+    <Subject>مكافحة الآفات</Subject>
+    <Body>مكافحة الآفات بأنواعها.</Body>
+    <SerImg>/OrionMaster/assets/images/services/pestpredictions.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se6</seId>
+    <deId>de6</deId>
+    <Category>OtherServices</Category>
+    <Subject>تنسيق حدائق</Subject>
+    <Body>تقديم كافة خدمات تنسيق الحدائق التي تريدها.</Body>
+    <SerImg>/OrionMaster/assets/images/services/landscape-curb.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se7</seId>
+    <deId>de7</deId>
+    <Category>HomeServices</Category>
+    <Subject>النجارة والسباكة والكهرباء</Subject>
+    <Body>نلبي جميع متطلبات المنزل من النجارة والسباكة والكهرباء.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Carpentry-Plumbing-Electricity.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se8</seId>
+    <deId>de8</deId>
+    <Category>OtherServices</Category>
+    <Subject>وظائف الطلاء</Subject>
+    <Body>طلاء الأماكن التي تريدها بالكامل.</Body>
+    <SerImg>/OrionMaster/assets/images/services/paint.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se9</seId>
+    <deId>de9</deId>
+    <Category>Maintainance</Category>
+    <Subject>صيانة الأقمار الصناعية</Subject>
+    <Body>توفير خدمة الأقمار الصناعية لمنزلك أو مكتبك أو أي مكان تريده.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Satellite-maintenance.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se10</seId>
+    <deId>de10</deId>
+    <Category>Maintainance</Category>
+    <Subject>صيانة المكيفات</Subject>
+    <Body>صيانه التكييف لمنزلك او مكتبك او أي مكان تريده.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Air-Conditioner-Repair.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se11</seId>
+    <deId>de11</deId>
+    <Category>Maintainance</Category>
+    <Subject>صيانة الأجهزة</Subject>
+    <Body>صيانه التكييف لمنزلك او مكتبك او أي مكان تريده.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Appliances-Maintenance.png</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se12</seId>
+    <deId>de12</deId>
+    <Category>HomeServices</Category>
+    <Subject>الغسيل والتنظيف الجاف</Subject>
+    <Body>رعاية جميع احتياجات الغسيل والتنظيف الجاف.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Laundry-DryClean.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se13</seId>
+    <deId>de13</deId>
+    <Category>FoodDelivery</Category>
+    <Subject>خضروات</Subject>
+    <Body>تزويدك بمواد البقالة اليومية حتى باب بيتك.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Grocery.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se14</seId>
+    <deId>de14</deId>
+    <Category>FoodDelivery</Category>
+    <Subject>توصيل</Subject>
+    <Body>نوفر كل احتياجاتك من خدمات التوصيل أينما تريد.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Delivery.png</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se15</seId>
+    <deId>de15</deId>
+    <Category>HomeServices</Category>
+    <Subject>الشحن الكهربائي</Subject>
+    <Body>رعاية مدفوعات رسوم الكهرباء المعتادة.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Electricity-Charge.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se16</seId>
+    <deId>de16</deId>
+    <Category>CarServices</Category>
+    <Subject>إنقاذ السيارة</Subject>
+    <Body>توفير إنقاذ السيارة أينما كنت.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Car-Rescue.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se17</seId>
+    <deId>de17</deId>
+    <Category>CarServices</Category>
+    <Subject>غسيل سيارة</Subject>
+    <Body>العناية بنظافة سيارتك.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Car-Wash.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se18</seId>
+    <deId>de18</deId>
+    <Category>CarServices</Category>
+    <Subject>صيانة السيارة</Subject>
+    <Body>العناية بصيانة سيارتك.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Car-Maintenance.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se19</seId>
+    <deId>de19</deId>
+    <Category>OtherServices</Category>
+    <Subject>ركوب الترحيب والمشاركة</Subject>
+    <Body>نوفر لك حلولاً لمشاركة السيارات من الباب إلى الباب.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Ride-Hailing.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se20</seId>
+    <deId>de20</deId>
+    <Category>OtherServices</Category>
+    <Subject>الجمال والعناية الشخصية</Subject>
+    <Body>العناية بجمالك الشخصي والعناية الشخصية.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Beauty-Personal.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se21</seId>
+    <deId>de21</deId>
+    <Category>OtherServices</Category>
+    <Subject>رعاية الحيوانات الأليفة</Subject>
+    <Body>كل ما يخص العناية بالحيوانات الأليفة.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Pets-Care.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se22</seId>
+    <deId>de22</deId>
+    <Category>HomeServices</Category>
+    <Subject>خدمات طبية منزلية</Subject>
+    <Body>نوفر لك جميع الخدمات الطبية التي تحتاجها حتى باب بيتك.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Home-Medical-Services.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se23</seId>
+    <deId>de23</deId>
+    <Category>OtherServices</Category>
+    <Subject>خدمات السفر</Subject>
+    <Body>إنوفر كل احتياجات السفر الخاصة بك.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Traveling-services.jpg</SerImg>
+  </ServiceData>
+
+  <ServiceData>
+    <seId>se24</seId>
+    <deId>de24</deId>
+    <Category>Payment</Category>
+    <Subject>خدمات الدفع</Subject>
+    <Body>رعاية جميع مدفوعاتك بسهولة.</Body>
+    <SerImg>/OrionMaster/assets/images/services/Payment-Services.png</SerImg>
+  </ServiceData>
+
+</Services>

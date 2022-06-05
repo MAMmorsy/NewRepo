@@ -1,0 +1,80 @@
+﻿@model AboutUs
+<!-- About Us -->
+<div class="about py-5">
+    <div class="about-mar">
+
+        <p class="w-75 fs-15">
+            @Html.Raw(Model.HeadInfo)
+        </p>
+
+        <div class="row mx-0">
+            <div class="col-md-7 pl-0 pr-5">
+
+                <div class="mt-4 pb-5 about-tabs">
+                    <ul class="nav nav-tabs d-flex justify-content-start border-0" id="myTab" role="tablist">
+                        @foreach (AboutUsdata item in Model.AboutUsdatas)
+                        {
+                            <li class="nav-item p-0 my-0 mx-0 position-relative">
+                                <a class="nav-link px-1 @item.Active" id="@item.Title.Replace(" ","_")-tab" data-toggle="tab" href="#@item.Title.Replace(" ","_")" role="tab" aria-controls="@item.Title.Replace(" ","_")" aria-selected="true">
+                                    @item.Title
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                    <!--Start Content of All Tabs-->
+                    <div class="tab-content mt-4" id="myTabContent">
+
+                        @foreach (AboutUsdata item in Model.AboutUsdatas)
+                        {
+                            <div class="tab-pane fade show @item.Active" id="@item.Title.Replace(" ","_")" role="tabpanel" aria-labelledby="@item.Title.Replace(" ","_")-tab">
+
+                                <h4>@item.Subject</h4>
+                                <p class="fs-14 pt-1 f_M">
+                                    @item.Desc
+                                </p>
+
+                                <ul class="list-unstyled">
+                                    @foreach (Aboutdata subitem in item.Aboutdatas)
+                                    {
+                                        if (subitem.Subject == "")
+                                        {
+                                            <li>
+                                                <div class="mx-5 px-3 about-m mt-5">
+                                                    <p class="f_M fs-15">
+                                                        @subitem.Body
+                                                    </p>
+                                                    </div>
+                                                    </li>
+                                        }
+                                        else
+                                        {
+                                        <li>
+                                            <i class="la la-check-double secondary-alt-txt la-lg"></i>
+                                            <span class="secondary-alt-txt f_B fs-16">@subitem.Subject</span>
+                                            <p class="px-4 fs-14 f_M">
+                                                @subitem.Body
+                                            </p>
+                                        </li>
+                                        }
+                                    }
+
+                                </ul>
+
+                            </div>
+                        }
+                       
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-5 hidden-mob">
+                <img src="~/assets/images/about-pattern.png" alt="" class="pattern">
+                <img src="~/assets/images/about2.png" alt="" class="aboutt">
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- ==================================== -->

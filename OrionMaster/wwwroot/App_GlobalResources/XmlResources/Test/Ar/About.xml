@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AboutUs>
+  <HeadInfo>
+    اورايون هو المنصة الحصرية لجميع الخدمات المطلوبة. &lt;br /&gt;
+    في اورايون بنوجه تركيزنا على العملاء، وبنعتمد على التحسين المستمر في كل اللي &lt;br /&gt;
+    بنقوم بيه لضمان أعلى مستويات الرضا لعملائنا.
+  </HeadInfo>
+
+  <AboutUsData>
+  <Title>عن اورايون</Title>
+    <active>active</active>
+  <Subject>اختار أورايون يكون شريكك المفضل</Subject>
+  <Desc>بنقدم خدمات ومنتجات متكاملة من خلال منصة واحدة، هدفنا هو التحسين المستمر في كل ما نقوم به لضمان أعلى مستويات الرضا لعملائنا. نقدم خدمات متكاملة من مكان واحد لتسهيل حياة عملائنا وتحسين احتياجتهم اليومية من خلال مجموعة متنوعة من الخدمات عبر شبكة متنوعة لضمان خدمة مصممة حسب راحتك، الوقت الذي تختاره والسعر الذي يناسبك.</Desc>
+  <AboutData>
+    <sId>s1</sId>
+    <dId>d1</dId>
+    <active>active</active>
+    <Subject>السهولة </Subject>
+    <Body>اختياراتنا الواسعة والمتعددة من مقدمين الخدمات بتسمحلك بتطلب الخدمة وتحديد ميعادها في الوقت اللي يناسبك.</Body>
+  </AboutData>
+
+  <AboutData>
+    <sId>s2</sId>
+    <dId>d2</dId>
+    <active>active</active>
+    <Subject>اسعار تناسبك</Subject>
+    <Body>الطلب من اورايون بيضمنلك أسعار أقل من الأسعار المتاحة في السوق حتى لو طلبت من مقدم الخدمة بشكل مباشر.</Body>
+  </AboutData>
+
+  <AboutData>
+    <sId>s3</sId>
+    <dId>d3</dId>
+    <active>active</active>
+    <Subject>الجودة</Subject>
+    <Body>بنضمنلك أعلى جودة من خلال شبكة شركائنا الواسعة. وفي حالة عدم رضاك عن الخدمة، بنقدملك الخدمة مرة تانية مجاناً من خلال مقدم شركة أخر من شبكتنا الواسعة.</Body>
+  </AboutData>
+</AboutUsData>
+
+    <AboutUsData>
+      <Title>مهمتنا</Title>
+      <active></active>
+      <Subject></Subject>
+      <Desc></Desc>
+      <AboutData>
+        <sId>ms1</sId>
+        <dId>sd1</dId>
+        <active></active>
+        <Subject></Subject>
+        <Body>بنقدملك التميز من خلال توفير سوق ذكي للخدمات مع التركيز على الاستدامة في فاعالية العمل من ناحية التكلفة والتكنولوجيا المبتكرة، وتحقيق الاحتياجات لنفوق توقعات عملائنا وشركائنا.</Body>
+      </AboutData>
+    </AboutUsData>
+    <AboutUsData>
+      <Title>رؤيتنا</Title>
+      <active></active>
+      <Subject></Subject>
+      <Desc></Desc>
+      <AboutData>
+        <sId>vs1</sId>
+        <dId>vd1</dId>
+        <active></active>
+        <Subject></Subject>
+        <Body>ان نكون تطبيق الخدمات الأمثل للسوق الذكي، وتسهيل حياة عملائنا.</Body>
+      </AboutData>
+  </AboutUsData>
+</AboutUs>

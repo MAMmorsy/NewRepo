@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Features>
+  <Title>ميزاتنا</Title>
+  <Desc>هذه هي الركائز الأساسية التي تجعلنا متميزين!</Desc>
+  <FeaturesData>
+    <sId>s1</sId>
+    <dId>d1</dId>
+    <Subject>سعر </Subject>
+    <Body>سعر تنافسي مقارنة بمقدمي الخدمات الآخرين. كذلك العروض والصفقات والمكافآت المكتسبة.</Body>
+    <Img>/assets/images/icons/why/knowledge-1.png</Img>
+  </FeaturesData>
+
+  <FeaturesData>
+    <sId>s2</sId>
+    <dId>d2</dId>
+    <Subject>راحة</Subject>
+    <Body>سهولة الطلبات والجدولة من قائمة الخدمات المصممة لاحتياجات كل عميل وفي الوقت الذي يختاره.</Body>
+    <Img>/assets/images/icons/why/surface-1.png</Img>
+  </FeaturesData>
+
+  <FeaturesData>
+    <sId>s3</sId>
+    <dId>d3</dId>
+    <Subject>جودة</Subject>
+    <Body>نحن نقدم الجودة المثلى لعملائنا، ونقدم تجربة سلسة وفريدة من نوعها.</Body>
+    <Img>/assets/images/icons/why/reliability.png</Img>
+  </FeaturesData>
+
+  <FeaturesData>
+    <sId>s4</sId>
+    <dId>d4</dId>
+    <Subject>إضفاء الطابع الشخصي </Subject>
+    <Body>المتابعة وإعتبار تعليقات وملاحظات العملاء، التعلم والتحسين دائمًا، بجانب جمع الرؤى ومعرفة عملائنا وتفضيلاتهم.</Body>
+    <Img>/assets/images/icons/why/customer-service.png</Img>
+    </FeaturesData>
+
+  <FeaturesData>
+    <sId>s5</sId>
+    <dId>d5</dId>
+    <Subject>مصداقية</Subject>
+    <Body>بدعم من مجموعة طلعت مصطفى، مجموعة التطوير العقاري الرائدة ذات السمعة الطيبة والتاريخ المحترم.</Body>
+    <Img>/assets/images/icons/why/team.png</Img>
+  </FeaturesData>
+
+</Features>

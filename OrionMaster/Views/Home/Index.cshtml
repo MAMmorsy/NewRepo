@@ -1,0 +1,498 @@
+﻿@model dynamic
+<!-- Start Carousel -->
+<div id="carouselId" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselId" data-slide-to="1"></li>
+        <li data-target="#carouselId" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner h-100" role="listbox">
+        <!-- Item -->
+        <div class="carousel-item h-100 active">
+            <img src="~/assets/images/slider-bg3.png" alt="First slide" class="w-100 h-100 slider-img">
+            <div class="carousel-caption">
+                <div class="row mx-0 w-90">
+                    <div class="col-md-6">
+                        <!-- Headline Div -->
+                        <div class="heading">
+                            <div class="">
+                                @if (Context.Session.GetString("lang") == "Ar")
+                                {
+                                <span class="fs-42 f_B animate__animated animate__lightSpeedInLeft d-block">
+                                    كل ما تحتاجه
+                                    <span class="d-block fs-28 f_M">
+                                        مجرد مكالمة هاتفية بعيدا!
+                                    </span>
+                                </span>
+                                <span class="fs-42 f_M animate__animated animate__lightSpeedInRight d-block">
+                                    <a href="tel:16286" class="btn pay-btn mt-4 animate__animated animate__zoomIn animate__delay-1s">16286 </a>
+                                </span>
+                                }
+                                else
+                                {
+                                <span class="fs-42 f_B animate__animated animate__lightSpeedInLeft d-block">
+                                    Everything you need
+                                    <span class="d-block fs-28 f_M">
+                                        just a phone call away!
+                                    </span>
+                                </span>
+                                <span class="fs-42 f_M animate__animated animate__lightSpeedInRight d-block">
+                                    <a href="tel:16286" class="btn pay-btn mt-4 animate__animated animate__zoomIn animate__delay-1s">16286 </a>
+                                </span>
+                                }
+                            </div>
+                            <div class="px-5 mx-5">
+                                <hr>
+                            </div>
+                            <!-- <a href="tmg_payement.html" class="btn pay-btn mt-4 animate__animated animate__zoomIn animate__delay-1s">Pay Your Bills</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Item -->
+        <div class="carousel-item h-100">
+            <img src="~/assets/images/slider-bg1.png" alt="First slide" class="w-100 h-100 slider-img">
+            <div class="carousel-caption">
+                <div class="row mx-0 w-90">
+                    <div class="col-md-5">
+                        <!-- Headline Div -->
+                        <div class="heading">
+                            <div class="">
+                                @if (Context.Session.GetString("lang") == "Ar")
+                                {
+                                <span class="fs-42 f_M animate__animated animate__lightSpeedInLeft d-block">
+                                    إعادة الشحن السريع عبر الإنترنت.
+                                </span>
+                                <span class="fs-42 f_M animate__animated animate__lightSpeedInRight d-block">
+                                    وفر الوقت والمال!
+                                </span>
+                                }
+                                else
+                                {
+                                <span class="fs-42 f_M animate__animated animate__lightSpeedInLeft d-block">
+                                    Online Quick Recharge.
+                                </span>
+                                <span class="fs-42 f_M animate__animated animate__lightSpeedInRight d-block">
+                                    Save Time and Money!
+                                </span>
+                                }
+                            </div>
+                            <div class="px-5 mx-5">
+                                <hr>
+                            </div>
+                            <!-- <a href="tmg_payement.html" class="btn pay-btn mt-4 animate__animated animate__zoomIn animate__delay-1s">Pay Your Bills</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Item -->
+        <div class="carousel-item h-100">
+            <img src="~/assets/images/slider-bg2.png" alt="First slide" class="w-100 h-100 slider-img">
+            <div class="carousel-caption">
+                <div class="row mx-0 w-90">
+                    <div class="col-md-6">
+                        <!-- Headline Div -->
+                        <div class="heading">
+                            <div class="">
+                                @if (Context.Session.GetString("lang") == "Ar")
+                                {
+                                <span class="fs-42 f_B animate__animated animate__lightSpeedInLeft d-block">
+                                    جودة مضمونة
+                                    <br>
+                                    <span class="f_M fs-26 d-inline-block">
+                                        من شبكتنا الواسعة
+                                        <br>
+                                        من مقدمي الخدمة
+                                    </span>
+                                </span>
+                                }
+                                else
+                                {
+                                <span class="fs-42 f_B animate__animated animate__lightSpeedInLeft d-block">
+                                    Guaranteed quality
+                                    <br>
+                                    <span class="f_M fs-26 d-inline-block">
+                                        from our wide network
+                                        <br>
+                                        of service providers
+                                    </span>
+                                </span>
+                                }
+                            </div>
+                            <div class="px-5 mx-5">
+                                <hr>
+                            </div>
+                            @if (Context.Session.GetString("lang") == "Ar")
+                                {
+                            <a asp-action="Partners" asp-controller="Home" class="btn pay-btn mt-4 animate__animated animate__zoomIn animate__delay-1s">اعرف المزيد</a>@*href="partners.html"*@
+                            }
+                            else
+                            {
+                            <a asp-action="Partners" asp-controller="Home" class="btn pay-btn mt-4 animate__animated animate__zoomIn animate__delay-1s">Learn More</a>@*href="partners.html"*@
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- ==================================== -->
+<!-- Our Features -->
+<section class="features">
+    <div class="container position-relative" data--duration="3s" data--delay="0.3s">
+        <div class="text-center pb-4">
+            <h1 class="primary-txt fs-32 f_B">@Model.Features.Title @*Our Features*@</h1>
+            <p class="mx-auto fs-14 f_M">
+                @Model.Features.Desc
+                @*card-textThese are our main pillars that makes us stand out!*@
+            </p>
+        </div>
+
+        <div class="row section-content mx-0">
+
+            @foreach (Featuresdata item in Model.Features.Featuresdatas)
+            {
+            <div class="col-lg-4 col-md-6 col-12 fadeInLeft wow" data-wow-delay=".1s">
+                <div class="about-card">
+
+                    <img src=@item.Img alt="" class="about-icons">
+                    <h6 class="mb-0 py-3">@item.Subject</h6>
+                    <p class="fs-14 black-color-text feature-desc mb-0">
+                        @item.Body
+                    </p>
+                </div>
+            </div>
+            }
+
+                    </div>
+                </div>
+</section>
+
+<!-- ==================================== -->
+<!-- contact -->
+<section id="Contacting" class="contact__ section-padding">
+    <div class="container">
+        <div class="row">
+
+            <div class="section-head col-lg-8 mx-auto text-center mb-lg-4">
+                @if (Context.Session.GetString("lang") == "Ar")
+                {
+                <h4 class="mb-3 primary-txt text-uppercase f_B mt-5">ابقى <span>على </span> تواصل</h4>
+                }
+                else
+                {
+                <h4 class="mb-3 primary-txt text-uppercase f_B mt-5">Get <span>In</span> Touch</h4>
+                }
+                <!-- <p>We are a passionate digital design agency that specializes in beautiful and easy-to-use digital design &amp; web development services.</p> -->
+            </div>
+
+            <div class="col-lg-5 con-pl d-flex align-items-center">
+                <div class="contact-info mb-md-5">
+                    <div class="item mb-3">
+                        <div class="d-flex align-items-center justify-content-start secondary-alt-txt">
+                            <i class="la la-phone la-lg"></i>
+                            @if (Context.Session.GetString("lang") == "Ar")
+                            {
+                            <h6 class="f_B mb-0">تليفون</h6>
+                            }
+                            else
+                            {
+                            <h6 class="f_B mb-0">Phone</h6>
+                            }
+                        </div>
+                        <ul class="px-4 pt-2">
+                            <li class="px-2 f_M black-txt fs-15">
+                                <a href="tel:16286">16286</a>
+                            </li>
+                            <li class="px-2 f_M black-txt fs-15">
+                                <a target="blank" href="https://api.whatsapp.com/send?phone=201101016286">+201101016286</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item mb-3">
+                        <div class="d-flex align-items-center justify-content-start secondary-alt-txt">
+                            <i class="la la-envelope la-lg"></i>
+                            @if (Context.Session.GetString("lang") == "Ar")
+                            {
+                            <h6 class="f_B mb-0">بريد الكترونى</h6>
+                            }
+                            else
+                            {
+                            <h6 class="f_B mb-0">Email</h6>
+                            }
+                        </div>
+                        <ul class="px-4 pt-2">
+                            <li class="px-2 f_M black-txt fs-15">
+                                <a href="mailto:info@orion-eg.com">info@orion-eg.com</a>
+                            </li>
+                            <!-- <li class="px-2 f_M black-txt fs-15">support@orion-eg.com</li> -->
+                        </ul>
+                    </div>
+                    <div class="item mb-3">
+                        @if (Context.Session.GetString("lang") == "Ar")
+                        {
+                        <div class="d-flex align-items-center justify-content-start secondary-alt-txt">
+                            <i class="la la-map-marker la-lg"></i>
+                            <h6 class="f_B mb-0">عنوان</h6>
+                        </div>
+                        <ul class="px-4 pt-2">
+                            <li class="px-2 f_M black-txt fs-15">القاهرة - مدينتي - مبنى الإدارة B3</li>
+                        </ul>
+                        }
+                        else
+                        {
+                        <div class="d-flex align-items-center justify-content-start secondary-alt-txt">
+                            <i class="la la-map-marker la-lg"></i>
+                            <h6 class="f_B mb-0">Address</h6>
+                        </div>
+                        <ul class="px-4 pt-2">
+                            <li class="px-2 f_M black-txt fs-15">Cairo - Madinaty – B3 Administration Building</li>
+                        </ul>
+                        }
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+
+            <div class="col-lg-6">
+                @*<form class="form" id="contact-form" method="post" >*@
+
+                <div class="messages"></div>
+
+                <div class="controls">
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input id="form_name" class="form-control" type="text" name="name" placeholder="Name" required="required">
+                                <span id="lblNameError" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input id="form_email" class="form-control" type="email" name="email" placeholder="Email" required="required">
+                                <span id="lblEmailError" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input id="form_phone" class="form-control" type="text" name="phone" placeholder="Phone Number">
+                                <span id="lblPhoneError" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input id="form_subject" class="form-control" type="text" name="subject" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea id="form_message" class="form-control" name="message" placeholder="Message" rows="4" required="required"></textarea>
+                                <span id="lblmessageError" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <button type="submit" id="btnContact" class="btn primary-bg btn-block"><span style="color: white;">Send Message</span></button>
+                            @*<div id='loader' style='display: none;'>
+                                <img src="~/assets/images/load.gif" width='32px' height='32px'>
+                            </div>*@
+                            <!-- Image loader -->
+                        </div>
+
+                        <span id="lblretval" class="text-danger"></span>
+                    </div>
+                    @*<div class="loading" align="center">
+                        
+                        <img src="~/assets/images/load.gif" width='30px' height='30px' alt="" />
+                    </div>*@
+                </div>
+                @*</form>*@
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ==================================== -->
+<!-- FAQs -->
+<section id="FAQs" class="faqs py-5 mb-5">
+    <div class="faq py-5">
+        <div class="text-center mb-5">
+            @*<h1 class="primary-txt fs-32 f_B">Frequently Asked Questions</h1>*@
+            <h1 class="primary-txt fs-32 f_B">@Model.Faq.Title</h1>
+        </div>
+
+        <!-- Question repeatable -->
+        <div class="row mx-0">
+            <div class="col-md-9 mx-auto" id="accordianId" role="tablist" aria-multiselectable="true">
+                @foreach (FAQdata data in Model.Faq.FAQdatas)
+                {
+                    <div class="card mb-3">
+                        <div class="card-header secondary-alt-txt" role="tab" id=@data.sId>
+                            <span class="mb-0 panel-title fs-16 f_B">
+                                <a data-toggle="collapse" class="collapsed" data-parent="#accordianId" href="#@data.dId" aria-expanded="true" aria-controls="faqOne">
+                                    @data.Q
+                                </a>
+                            </span>
+                        </div>
+                        <div id=@data.dId class="collapse" role="tabpanel" aria-labelledby="section1HeaderId">
+                            <div class="card-body fs-15 f_M">
+                                <p class="mb-1">
+                                    @Html.Raw(data.A)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==================================== -->
+@section Scripts {
+
+    <script type="text/javascript">
+
+        
+        $(function () {
+            $("#btnContact").click(function () {
+                if (!validName()) {
+                    $("#lblNameError").html("Enter Your Name");
+                    return;
+                }
+                else
+                    $("#lblNameError").html("");
+                if (validEmail() != "1") {
+                    $("#lblEmailError").html(validEmail());
+                    return;
+                }
+                else
+                    $("#lblEmailError").html("");
+                if (!validPhone()) {
+                    $("#lblPhoneError").html("Enter a Valid Phone");
+                    return;
+                }
+                else
+                    $("#lblPhoneError").html("");
+                if (!validSubject()) {
+                    $("#lblmessageError").html("Enter Your Message");
+                    return;
+                }
+                else
+                    $("#lblmessageError").html("");
+                //var email = document.getElementById("form_email").value;
+                //var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                //if (email != "") {
+                //    if (email.match(validRegex)) {
+                $.ajax({
+                    type: "POST",
+                    ///*Test Version*/
+                    //url: "/OrionMaster/UserMessages/Contact",
+                    /*Live Version*/
+                    url: "/UserMessages/Contact",
+                    data: { "name": $("#form_name").val(), "email": $("#form_email").val(), "phone": $("#form_phone").val(), "subject": $("#form_subject").val(), "msg": $("#form_message").val() },
+                    success: function (response) {
+                        if (response != null) {
+                            $("#lblretval").html(response);
+                            $("#form_name").val("");
+                            $("#form_email").val("");
+                            $("#form_phone").val("");
+                            $("#form_subject").val("");
+                            $("#form_message").val("")
+                            setTimeout(function () {
+                                $("#lblretval").html("");
+                            }, 3000);
+                        } else {
+                            /*alert("Session object not found.");*/
+                        }
+                    }
+                    //,
+                    //failure: function (response) {
+                    //    alert(response.responseText);
+                    //},
+                    //error: function (response) {
+                    //    alert(response.responseText);
+                    //}
+                });
+                //    }
+                //    else {
+                //        $("#lblEmailError").html("enter a valid email");
+                //    }
+                //}
+                //else {
+                //    $("#lblEmailError").html("enter your email");
+                //}
+            });
+
+
+        });
+        function validPhone() {
+
+            var phone = document.getElementById("form_phone").value;
+            if (phone == "")
+                return true;
+            else {
+                var phoneno = /^\d{11}$/;
+                if (phone.match(phoneno)) {
+                    return true;
+                }
+                else {
+
+                    return false;
+                }
+            }
+        }
+        function validEmail() {
+
+            var email = document.getElementById("form_email").value;
+            if (email == "")
+                return "Enter Your Email";
+            else {
+                var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                if (email.match(validRegex)) {
+                    return "1";
+                }
+                else {
+
+                    return "Enter a Valid Email";
+                }
+            }
+        }
+        function validName() {
+
+            var name = document.getElementById("form_name").value;
+            if (name == "")
+                return false;
+            else
+                return true;
+        }
+        function validSubject() {
+            var subject = document.getElementById("form_message").value;
+            if (subject == "")
+                return false;
+            else
+                return true;
+        }
+    </script>
+
+}

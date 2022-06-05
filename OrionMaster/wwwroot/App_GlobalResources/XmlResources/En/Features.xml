@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Features>
+  <Title>Our Features</Title>
+  <Desc>These are our main pillars that makes us stand out!</Desc>
+  <FeaturesData>
+    <sId>s1</sId>
+    <dId>d1</dId>
+    <Subject>Price </Subject>
+    <Body>Competitive price compared to other services providers. Offers, deals, earned rewards. </Body>
+    <Img>/assets/images/icons/why/knowledge-1.png</Img>
+  </FeaturesData>
+
+  <FeaturesData>
+    <sId>s2</sId>
+    <dId>d2</dId>
+    <Subject>Convenience</Subject>
+    <Body>Ease of requests and scheduling from a menu of services tailored to every customer’s needs and at the time of your choosing.</Body>
+    <Img>/assets/images/icons/why/surface-1.png</Img>
+  </FeaturesData>
+
+  <FeaturesData>
+    <sId>s3</sId>
+    <dId>d3</dId>
+    <Subject>Quality</Subject>
+    <Body>We deliver optimum quality to our customers, providing a seamless and unique experience.</Body>
+    <Img>/assets/images/icons/why/reliability.png</Img>
+  </FeaturesData>
+
+  <FeaturesData>
+    <sId>s4</sId>
+    <dId>d4</dId>
+    <Subject>Personalization </Subject>
+    <Body>Follow up and feedback, always learning and improving. Gathering insights and knowing our customers and their preferences.</Body>
+    <Img>/assets/images/icons/why/customer-service.png</Img>
+    </FeaturesData>
+
+  <FeaturesData>
+    <sId>s5</sId>
+    <dId>d5</dId>
+    <Subject>Credibility</Subject>
+    <Body>Powered by Talaat Mostafa Group, the leading real estate development group with a reputable and respected history.</Body>
+    <Img>/assets/images/icons/why/team.png</Img>
+  </FeaturesData>
+
+</Features>

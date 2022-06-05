@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FAQ>
+  <Title>ORION FAQs</Title>
+  <FAQdata>
+    <sId>s1</sId>
+    <dId>d1</dId>
+  <Q>What are Orion’s services?</Q>
+      <A>
+        Orion is a fully integrated services platform that offers you whatever service you need through our network of service providers and through Orion itself.&lt;br /&gt;
+        Orion is a cost-efficient solution as we provide the same services from the service providers but at a lower cost.&lt;br /&gt;
+        &lt;span class="f_B"&gt;For more details&lt;/span&gt; on our offerings, please check our &lt;a class="f_B link" href="/Home/Services"&gt;services page&lt;/a&gt; for our full range of services and their prices.
+        
+      </A>
+  </FAQdata>
+
+  <FAQdata>
+
+    <sId>s2</sId>
+    <dId>d2</dId>
+    <Q>How to book a service? </Q>
+      <A>
+        For a seamless booking, pick the service you need from our &lt;a class="f_B link" href="/Home/Services"&gt;services page&lt;/a&gt; and call us on &lt;a href="tel:16286" class="f_B"&gt;16286 &lt;/a&gt; to make the reservation.&lt;br /&gt;
+        &lt;span class="f_B"&gt;For more details&lt;/span&gt; on our offerings, please check our &lt;a class="f_B link" href="/Home/Services"&gt;services page&lt;/a&gt; for our full range of services and their prices.
+      </A>
+  </FAQdata>
+
+  <FAQdata>
+
+    <sId>s3</sId>
+    <dId>d3</dId>
+    <Q>How much do our services cost?</Q>
+    <A>
+        You can check our &lt;a class="f_B link" href="/Home/Services"&gt;services page&lt;/a&gt; for our full range of services and their prices&lt;br /&gt;
+        You can also call us on &lt;a href="tel:16286" class="f_B"&gt;16286 &lt;/a&gt; or chat with us through WhatsApp on the number &lt;a class="f_B" target="blank" href="https://api.whatsapp.com/send?phone=201101016286"&gt;+201101016286&lt;/a&gt;.
+      </A>
+  </FAQdata>
+
+  <FAQdata>
+    <sId>s4</sId>
+    <dId>d4</dId>
+    <Q>What areas does Orion cover?</Q>
+    <A>
+        Orion offers its services in Madinaty, Rehab, 5th, 3rd, and 1st Settlement, and El Shrouk city.
+      </A>
+    </FAQdata>
+
+  <FAQdata>
+    <sId>s5</sId>
+    <dId>d5</dId>
+    <Q>Who are the service providers/partners network?</Q>
+    <A>
+        We have a wide network of service providers tailored to meet all your needs. You can check our &lt;a class="f_B link" href="/Home/Partners"&gt;Partners page&lt;/a&gt; to check the full list.&lt;br /&gt;
+        &lt;span class="f_B"&gt;For more details&lt;/span&gt; and bookings, please call us on &lt;a href="tel:16286" class="f_B"&gt;16286 &lt;/a&gt; or chat with us through WhatsApp on the number &lt;a class="f_B" target="blank" href="https://api.whatsapp.com/send?phone=201101016286"&gt;+201101016286&lt;/a&gt;.
+  </A>
+  </FAQdata>
+</FAQ>
